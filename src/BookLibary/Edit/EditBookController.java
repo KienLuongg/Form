@@ -1,7 +1,7 @@
 package BookLibary.Edit;
 import BookLibary.Book;
 import BookLibary.Main;
-import BookLibary.List.ListBookController;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -54,7 +54,7 @@ public class EditBookController implements Initializable {
         Main.rootStages.setScene(sc);
     }
 
-    public void submit(ActionEvent actionEvent) {
+    public void submit(ActionEvent event) {
         try{
             Integer p = Integer.parseInt(txtPrice.getText());
             Integer q = Integer.parseInt(txtQty.getText());

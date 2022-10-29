@@ -29,7 +29,7 @@ public class CreateBookController implements Initializable {
     public ComboBox<String> cbType;
 
     public void backToList() throws Exception {
-        Parent listSceneB = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../list/ListBook.fxml")));
+        Parent listSceneB = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../List/ListBook.fxml")));
         Scene sc = new Scene(listSceneB, 800, 600);
         Main.rootStages.setScene(sc);
     }

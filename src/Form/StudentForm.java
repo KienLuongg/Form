@@ -41,6 +41,6 @@ public class StudentForm {
     public String toString(){
 
 
-        return this.name+"\t"+this.email+"\t"+this.mark+"\n";
+        return this.name+"--"+this.email+"--"+this.mark+"\n";
     }
 }
