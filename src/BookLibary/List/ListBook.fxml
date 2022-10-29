@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" fx:controller="BookLibary.List.ListBookController" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+
+        <ListView fx:id="lv" layoutY="101.0" prefHeight="238.0" prefWidth="600.0" />
+        <Text layoutX="265.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <Button onAction="#CreateBook" layoutX="511.0" layoutY="74.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Add" />
+        <Button onAction="#sortByPrice" layoutX="8.0" layoutY="43.0" mnemonicParsing="false" text="SortByPrice" />
+        <Button onAction="#sortByQty" layoutX="8.0" layoutY="74.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="SortByQty" />
+        <Button onAction="#edit" layoutX="8.0" layoutY="346.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Edit" />
+        <TextField fx:id="searchValue" layoutX="377.0" layoutY="43.0" promptText="Search By Name" />
+        <Button onAction="#remove" layoutX="511.0" layoutY="346.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Remove" />
+        <Button onAction="#search" layoutX="538.0" layoutY="43.0" mnemonicParsing="false" text="Search" />
+    </children>
+</Pane>
